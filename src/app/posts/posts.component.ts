@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 
 
+
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
@@ -36,7 +37,9 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 export class PostsComponent implements OnInit {
   posts$: Object;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService ) {
+
+  }
 
   ngOnInit() {
     this.data.getPosts().subscribe(
