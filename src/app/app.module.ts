@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsComponent } from './forms/forms.component';
+import { ChartComponent } from './chart/chart.component';
 
 
 
@@ -24,7 +25,8 @@ import { FormsComponent } from './forms/forms.component';
     PostsComponent,
     UsersComponent,
     DetailsComponent,
-    FormsComponent
+    FormsComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

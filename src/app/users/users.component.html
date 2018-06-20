@@ -1,33 +1,31 @@
 
-
-
-
-<ul [@listStagger]= "users$">
-  <li *ngFor="let user of users$">
+<ul id="one" [@listStagger]= "users$">
+  <li id="two" *ngFor="let user of users$">
     <a routerLink="/details/{{user.id}}">{{ user.name }}</a>
 
     <ul>
       <li>{{ user.email }}</li>
       <li><a href="http://{{ user.website }}">{{ user.website }}</a></li>
+      <div class="button-row">
+        <button mat-icon-button>
+          <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-icon-button color="primary">
+          <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-icon-button color="accent">
+          <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-icon-button color="warn">
+          <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+        <button mat-icon-button disabled>
+          <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </button>
+      </div>
     </ul>
 
-    <div class="button-row">
-      <button mat-icon-button>
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="primary">
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="accent">
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="warn">
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button disabled>
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-    </div>
+   
     
   </li>
 </ul>
