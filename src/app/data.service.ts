@@ -35,7 +35,22 @@ export class DataService {
         "id": 701, "main": "Mist",
         "description": "mist", "icon": "50d"
       }, { "id": 741, "main": "Fog", "description": "fog", "icon": "50d" }], "dt": 1485768552
-    }]
+    },
+    {
+      "main": { "temp": 279.38, "pressure": 1011, "humidity": 93, "temp_min": 260, "temp_max": 265.15 },
+      "wind": { "speed": 2.6, "deg": 30 }, "clouds": { "all": 90 }, "weather": [{
+        "id": 701, "main": "Mist",
+        "description": "mist", "icon": "50d"
+      }, { "id": 741, "main": "Fog", "description": "fog", "icon": "50d" }], "dt": 1485808552
+    },
+    {
+      "main": { "temp": 279.38, "pressure": 1011, "humidity": 93, "temp_min": 285, "temp_max": 290 },
+      "wind": { "speed": 2.6, "deg": 30 }, "clouds": { "all": 90 }, "weather": [{
+        "id": 701, "main": "Mist",
+        "description": "mist", "icon": "50d"
+      }, { "id": 741, "main": "Fog", "description": "fog", "icon": "50d" }], "dt": 148838552
+    }
+  ]
   };
 
 
