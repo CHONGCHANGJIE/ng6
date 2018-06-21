@@ -1,9 +1,9 @@
 <h1>Posts</h1>
 
 
+<mat-spinner *ngIf="isLoading"></mat-spinner>
 
-
-<ul [@listStagger]= "posts$">
+<ul *ngIf="!isLoading" [@listStagger]= "posts$">
   <li *ngFor="let post of posts$">
     <a routerLink="">{{ post.title }}</a>
 

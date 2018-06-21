@@ -1,10 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatCheckboxModule,
-        MatIconModule, MatFormFieldModule,
-        MatNativeDateModule, MatRadioModule,
-        MatOptionModule, MatSelectModule, MatInputModule } from '@angular/material';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatIconModule,
+  MatFormFieldModule,
+  MatNativeDateModule,
+  MatRadioModule,
+  MatOptionModule,
+  MatSelectModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatChipsModule,
+  MatProgressSpinnerModule
+} from '@angular/material';
+
 
 @NgModule({
   imports: [
@@ -18,7 +28,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatRadioModule,
     MatOptionModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatChipsModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     MatButtonModule,
@@ -30,7 +42,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatRadioModule,
     MatOptionModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatChipsModule,
+    MatProgressSpinnerModule
   ],
   declarations: []
 })

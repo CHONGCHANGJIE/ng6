@@ -37,14 +37,21 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
 export class PostsComponent implements OnInit {
   posts$: Object;
 
+  isLoading; // add loader icon
+
   constructor(private data: DataService ) {
 
   }
 
+
   ngOnInit() {
+    this.isLoading = true;
+    setTimeout( () => {
     this.data.getPosts().subscribe(
-      data => this.posts$ = data
-    );
-  }
+      data => {this.posts$ = data;
+
+              this.isLoading = false;
+      });
+  }, 1000); }
 
 }
