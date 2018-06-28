@@ -12,7 +12,9 @@ import {
   MatInputModule,
   MatDatepickerModule,
   MatChipsModule,
-  MatProgressSpinnerModule
+  MatProgressSpinnerModule,
+  MatTabsModule,
+  MatToolbarModule
 } from '@angular/material';
 
 
@@ -30,7 +32,9 @@ import {
     MatSelectModule,
     MatInputModule,
     MatChipsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTabsModule,
+    MatToolbarModule
   ],
   exports: [
     MatButtonModule,
@@ -44,7 +48,9 @@ import {
     MatSelectModule,
     MatInputModule,
     MatChipsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTabsModule,
+    MatToolbarModule
   ],
   declarations: []
 })

@@ -13,6 +13,10 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsComponent } from './forms/forms.component';
 import { ChartComponent } from './chart/chart.component';
+import { ArtistComponent } from './artist/artist.component';
+import { ArtistTrackListComponent } from './artist-track-list/artist-track-list.component';
+import { ArtistAlbumListComponent } from './artist-album-list/artist-album-list.component';
+
 
 
 
@@ -26,7 +30,11 @@ import { ChartComponent } from './chart/chart.component';
     UsersComponent,
     DetailsComponent,
     FormsComponent,
-    ChartComponent
+    ChartComponent,
+    ArtistComponent,
+    ArtistTrackListComponent,
+    ArtistAlbumListComponent,
+
   ],
   imports: [
     BrowserModule,

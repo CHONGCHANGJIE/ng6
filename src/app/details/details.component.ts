@@ -12,14 +12,20 @@ import { ActivatedRoute } from '@angular/router';
 export class DetailsComponent implements OnInit {
 
   user$: Object;
+  isLoading; // add loader icon
 
   constructor(private route: ActivatedRoute, private data: DataService) {
      this.route.params.subscribe( params => this.user$ = params.id );
   }
 
   ngOnInit() {
+    this.isLoading = true;
     this.data.getUser(this.user$).subscribe(
-      data => this.user$ = data
+
+        data => {this.user$ = data;
+          this.isLoading = false;
+      }
+
     );
   }
 

@@ -6,6 +6,9 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsComponent } from './posts/posts.component';
 import { FormsComponent } from './forms/forms.component';
+import { ArtistComponent } from './artist/artist.component';
+import { ArtistTrackListComponent } from './artist-track-list/artist-track-list.component';
+import { ArtistAlbumListComponent } from './artist-album-list/artist-album-list.component';
 
 
 
@@ -29,6 +32,15 @@ const routes: Routes = [
   {
     path: 'chart',
     component: ChartComponent
+  },
+  {
+    path: 'artist',
+    component: ArtistComponent,
+    children: [
+
+      {path: 'track', component: ArtistTrackListComponent},
+      {path: 'album', component: ArtistAlbumListComponent},
+      ]
   }
 ];
 
